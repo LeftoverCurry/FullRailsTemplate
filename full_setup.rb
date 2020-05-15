@@ -17,8 +17,8 @@ end
 # Configure debugger
 def configure_debugger
   run 'mkdir ./.vscode'
-  create_file './.vscode/launch.json'
-  copy_file '~/railsprojects/full_setup_template/launch_template.json'
+  # create_file './.vscode/launch.json'
+  copy_file '~/railsprojects/full_setup_template/launch_template.json', './.vscode/launch.json'
 end
 
 # Creates a devise User model
@@ -36,3 +36,5 @@ def add_user_model
   # Create User model
   generate :devise, 'User', 'user_name', 'email'
 end
+
+add_gems
