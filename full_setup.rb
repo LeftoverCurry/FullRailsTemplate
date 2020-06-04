@@ -15,7 +15,7 @@ def add_gems
 
   gem_group :development, :test do
     gem 'factory_bot'
-    gem 'pry'
+    gem 'pry-rails'
     gem 'rspec-rails'
     gem 'debase'
     gem 'ruby-debug-ide'
@@ -78,5 +78,5 @@ after_bundle do
 
   say "Project created, Don't forget to create a new repo on GitHub!", :green
 
-  run 'open https://github.com/'
+  run 'open https://github.com/new'
 end
